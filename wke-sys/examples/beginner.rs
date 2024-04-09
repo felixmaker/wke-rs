@@ -171,7 +171,7 @@ extern "system" fn wndproc(window: HWND, message: u32, wparam: WPARAM, lparam: L
                     let form = CANDIDATEFORM {
                         dwIndex: 0,
                         dwStyle: CFS_FORCE_POSITION | CFS_POINT,
-                        ptCurrentPos: POINT { x: -9999, y: -9999 },
+                        ptCurrentPos: POINT { x: caret.x, y: caret.y},
                         ..Default::default()
                     };
 
