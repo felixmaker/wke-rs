@@ -7,11 +7,9 @@ edition = "2021"
 
 [dependencies]
 
+
 [dev-dependencies]
-winit = {version="0.29", features = ["rwh_05"] }
+winit = {version="0.30" }
 widestring = "1.1"
-pixels = "0.13"
-windows = { version="0.54", features=["Win32_Foundation", "Win32_Graphics_Gdi",
- "Win32_UI_WindowsAndMessaging", "Win32_System_LibraryLoader", 
- "Win32_UI_Shell", "Win32_UI_Input_KeyboardAndMouse",
- "Win32_System_SystemServices", "Win32_UI_HiDpi", "Win32_UI_Input_Ime", "Win32_Globalization"] }
+windows-sys = { version = "0.52.0", features = ["Win32_UI_Input", "Win32_UI_WindowsAndMessaging"] }
+softbuffer = "0.4.3"
